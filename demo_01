@@ -1,0 +1,99 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+#define ZERO 0
+#include<climits>
+using namespace std;
+
+struct Point
+{
+	int *x;
+	int *y;
+};
+void move(Point& q){
+	--*q.x;
+	++*q.y;
+		
+}
+void simon(int x){
+	using namespace std;
+	cout << "您输入的是： " << x << endl;
+}
+/*int main(){
+
+	Point p;
+	int a(5);
+	int b(-12);
+	p.x = &a;
+	p.y = &b;
+	move(p);
+
+	cout << "*P.x= " << *p.x << endl;
+	cout << "*P.y= " << *p.y << endl;
+
+	string str = "zhang qing";
+	cout << "str = " << str << endl;
+	int len = str.length();
+	cout << "str 字符串长度是："<<len << endl;
+	cout << "Hello" << endl;
+	int a = 5;
+	cout << a << endl;
+	int b = 6;
+	cout << "a+b= " << a + b << endl;
+	char x = 'x';
+	cout << "x = " << x << endl;
+	bool flag = true;
+	cout << flag ? 1 : 0 ;
+	cout << endl;
+	int y(200);
+	cout << "y= " << y<<endl;
+	int d[1024] ;
+	for (size_t i = 0; i < 10; i++)
+	{
+		d[i] = i;
+		cout << d[i]<<"\n";
+	}
+
+	int aa, bb;
+	aa = 10;
+	bb = 12;
+	aa = bb;
+	bb = 7;
+	cout << "aa= " << aa << endl;
+	cout << "bb= " << bb << endl;
+	cout << "aa/bb= " << aa / bb << endl;
+	cout << "aa%bb= " << aa % bb << endl;
+	aa -= 5;
+	cout << aa << endl;
+	//char xx;
+	//xx=cin.get();
+	//cout << xx << endl;
+	double dnum;
+//	dnum = sqrt(6.25);
+	cin >> dnum;
+	cout << "Dnum= " << sqrt(dnum) << endl;
+	//5.0的8.0次方
+	double dp=pow(5.0, 8.0);
+	cout << "Dp = " << dp << endl;
+
+	int m;
+	cout << "请输入数字：" << endl;
+	cin >> m;
+	simon(m);
+
+	int int_max = INT_MAX;
+	short short_max = SHRT_MAX;
+	long long_max = LONG_MAX;
+	long long ll_max = LLONG_MAX;
+	cout << "int_max= " << sizeof(int_max) << " byte"<<endl;
+	cout << "short_max= " << sizeof(short_max) << " byte" << endl;
+	cout << "long_max= " << sizeof(long_max) << " byte" << endl;
+	cout << "ll_max= " << sizeof(ll_max) << " byte" << endl;
+	cout << ZERO << endl;
+	int num = 10;
+	cout << oct << num << endl;
+	cout << dec << num << endl;
+	cout << hex << num << endl;
+	cin.get();
+	return 0;
+}*/
