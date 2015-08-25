@@ -1,0 +1,15 @@
+#include<iostream>
+int main() {
+	std::cout << "Hello world." << std::endl;
+	//使用new分配内存
+	int *ps = new int;
+	int a = 12;
+	ps = &a;
+	std::cout << *ps << std::endl;
+	//使用delete释放内存
+	//在C++中，值为0的指针被称为空指针（null pointer）.
+	//只能用delete来释放使用new分配的内存。然而，对空指针使用delete是安全的。
+	delete ps;
+	std::cin.get();
+	return 0;
+}
